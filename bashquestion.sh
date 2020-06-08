@@ -11,3 +11,5 @@ echo "b, Top 3 destination airpots are: "
 csvcut -c 18 2007.csv | sort | uniq -c | sort -r -n | awk 'BEGIN {print "Dest"",""Counts"}; {print $2","$1}' | head -4 > top3dest.csv
 
 csvlook top3dest.csv
+
+echo "Tuan Anh Nguyen - 100348136"
